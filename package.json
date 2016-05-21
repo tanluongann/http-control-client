@@ -2,7 +2,7 @@
   "name": "http-control-client",
   "version": "1.0.0",
   "description": "Client to install on the remote machine to allow control",
-  "repository": "https://github.com/tanluongann/http-control.git",
+  "repository": "https://github.com/tanluongann/http-control-client.git",
   "main": "probe.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
