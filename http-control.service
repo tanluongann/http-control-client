@@ -1,0 +1,16 @@
+[Unit]
+Description=HTTP Remote Control
+
+[Service]
+ExecStart=/usr/bin/node /dev/http-control/probe.js
+Restart=always
+RestartSec=10                       # Restart service after 10 seconds if node service crashes
+StandardOutput=syslog               # Output to syslog
+StandardError=syslog                # Output to syslog
+SyslogIdentifier=http-control
+User=admin
+Group=admin
+Environment=NODE_ENV=production PORT=1337
+
+[Install]
+WantedBy=multi-user.target
