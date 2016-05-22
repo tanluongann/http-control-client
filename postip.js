@@ -39,13 +39,9 @@ var logger = new (winston.Logger)({
 logger.debug('Updating ip to ' + url);
 
 request({
-    url: url,
-    qs: { "id": id, "pwd": pw },
+    uri: url,
     method: 'POST',
-    headers: {
-        'Content-Type': 'application/json',
-    },
-    body: ''
+    json: { "id": id, "pwd": pw },
 }, function(error, response, body){
     if(error) {
         logger.error(error);
