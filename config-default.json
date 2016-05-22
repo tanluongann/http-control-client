@@ -1,0 +1,8 @@
+{
+  "id": "default",
+  "pw": "default",
+  "server": "wss://ujust.watch:443",
+  "version": "0.1.8",
+  "intact": "",
+  "postip": "https://ujust.watch/ips"
+}
