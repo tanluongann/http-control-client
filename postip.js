@@ -7,6 +7,7 @@ nconf.file({ file: "config.json" });
 if(nconf.get('id') === 'default') {
   nconf.set('id', (new Date%9e6).toString(36) + (0|Math.random()*9e6).toString(36));
   nconf.save();
+  logger.debug('Replacing "default" id by "' + nconf.get('id') + '"');
 }
 
 var id  = nconf.get('id');
