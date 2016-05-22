@@ -1,6 +1,0 @@
-2016-05-22T03:09:29.129Z - error:  Error: connect ECONNREFUSED
-    at errnoException (net.js:901:11)
-    at Object.afterConnect [as oncomplete] (net.js:892:19)
-2016-05-22T03:12:05.515Z - info: {"status":"updated","ip":"114.93.128.105"}
-2016-05-22T03:12:37.917Z - info: Update successful {"status":"updated","ip":"114.93.128.105"}
-2016-05-22T03:13:11.491Z - info: Update successful {"status":"updated","ip":"114.93.128.105"}
